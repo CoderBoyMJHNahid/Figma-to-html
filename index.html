@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdClass</title>
+
+    <!-- css links -->
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <!-- Swiper's CSS link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- scripts cdn -->
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    
+<!-- header start -->
+<header id="first-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EdClass.io</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discover">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses_section">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog-section">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="header_info_wrapper d-flex align-items-center">
+                <div class="call_info_wrapper d-flex align-items-center me-xl-5 me-lg-3">
+                    <div class="call_info_icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="call_info_desc">
+                        <p>CALL ANYTIME</p>
+                        <p class="phone_number">+92 (800) - 6539</p>
+                    </div>
+                </div>
+                <div class="header_btn_wrapper">
+                    <a href="#" class="btn sign_up_btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="mobile_menu_second">
+    <ul id="second-mobile_menu_items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="classroom.html">Course</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="close_btn_menu">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div> 
+<!-- header end -->
+
+<!-- hero section start -->
+<section id="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero_info_wrapper">
+                    
+                    <div class="hero_text_wrapper">
+                        <h1>Let's Learn <span>New Courses</span> And Gain More Skills</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                    </div>
+                    
+                    <div class="search_course_wrapper">
+                        <input type="text" placeholder="Search Your Courses....." />
+                        <button class="btn inner-btn">Search Now <i class="fa-solid fa-magnifying-glass ms-2"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero_img_wrapper d-flex align-items-end">
+                    <div class="hero-img position-relative">
+                        <div class="banner-info--box banner-two--box  d-flex align-items-center mb-3 position-absolute">
+                            <div class="inner-img me-2">
+                                <img src="images/icon-2.png" alt="Icon Image"/>
+                            </div>
+                            <p>100+ Coarses Available</p>
+                        </div>
+                        <img src="images/hero1.png" id="hero-img--first" alt="Hero Images" />
+                        <div class="banner-info--box d-flex align-items-center mt-3">
+                            <div class="inner-img me-2">
+                                <img src="images/icon-1.png" alt="Icon Image"/>
+                            </div>
+                            <p>12.5 company around the world</p>
+                        </div>
+                    </div>
+                    <div class="hero-image w-50 mb-5">
+                        <img src="images/hero2.png" alt="Banner Image" id="banner-image--second" />
+
+                        <div class="video_wrapper position-relative mt-3" onclick="lightbox_open();">
+                            <img src="images/hero3.png" alt="Banner Image" id="banner-image--third" />
+                            <img src="images/videoplay.png" alt="icon" id="video_control_icon" />
+                        </div>
+
+                    </div>
+
+                    <div class="background_shape_wrapper">
+                        <div class="first_shape"></div>
+                        <div class="second_shape"></div>
+                        <div class="third_shape"></div>
+                        <div class="four_shape"></div>
+                        <div class="five_shape"></div>
+                        <div class="six_shape"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <img src="images/banner-1.png" id="hero_banner_img" alt="Banner Image" />
+</section>
+<!-- hero section end -->
+
+<!-- discover section start -->
+<section id="discover">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="discover_img_wrapper">
+                    <img src="images/discover.png" alt="discover image">
+                </div>
+            </div>
+            <div class="col-lg-6 position-relative">
+                <img src="images/star1.svg" id="star-one" alt="Star Icon" />
+                <div class="discover_desc_wrapper">
+                    <h5 class="grow_title">Grow your skills</h5>
+                    <h2 class="discover_title mb-4">learn with us from <br> <span>anywhere</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <button class="btn inner-btn position-relative mt-5">Discover more</button>
+                </div>  
+                <img src="images/star2.svg" id="star-two" alt="Star Icon" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- discover section end -->
+
+<!-- courses slider section start -->
+<section id="courses_section" class="position-relative">
+    <div class="container">
+        <div class="row">
+            <h2 class="light_title text-center mb-5">Featured <span>Courses Platform</span> <br>for Online Coaches</h2>
+            <!-- courser slider -->
+            <div class="course_slider_wrapper">
+                <div class="swiper course_slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course1.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">BUSINESS</div>
+                              <h5 class="card-title">Global Master of Business Administration</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course2.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">HEALTH</div>
+                              <h5 class="card-title">Learning Programing Language Python</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course3.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">LIFESTYLE</div>
+                              <h5 class="card-title">Computer Fundamentals Basic Startup</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course4.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">BUSINESS</div>
+                              <h5 class="card-title">Master of Business Administration (MBA)</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course1.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">BUSINESS</div>
+                              <h5 class="card-title">Global Master of Business Administration</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course2.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">HEALTH</div>
+                              <h5 class="card-title">Learning Programing Language Python</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course3.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">LIFESTYLE</div>
+                              <h5 class="card-title">Computer Fundamentals Basic Startup</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card course_card">
+                            <img src="images/course4.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <div class="course_category mb-2">BUSINESS</div>
+                              <h5 class="card-title">Master of Business Administration (MBA)</h5>
+                              <a href="#" class="course_link">Read More</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/background-shap.png" class="background-shap" alt="Background Sharp" />
+</section>
+<!-- courses slider section end -->
+
+<!-- mentors section start -->
+<section id="mentors-section">
+    <div class="container">
+        <div class="row text-center">
+            <h5 class="grow_title">Mentors</h5>
+            <h2 class="discover_title mb-4">Meet Our best <span>Mentors</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="mentors_card">
+                    <img src="images/mentors1.png" alt="Mentors" />
+                    <h5 class="mt-4">Wallace Smith</h5>
+                    <p>Senior Trainer</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="mentors_card">
+                    <img src="images/mentors2.png" alt="Mentors" />
+                    <h5 class="mt-4">Evan Ethrigde</h5>
+                    <p>Senior professor</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="mentors_card">
+                    <img src="images/mentors3.png" alt="Mentors" />
+                    <h5 class="mt-4">Elizabeth</h5>
+                    <p>Senior Teacher</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="mentors_card">
+                    <img src="images/mentors4.png" alt="Mentors" />
+                    <h5 class="mt-4">Donald Lewis</h5>
+                    <p>Senior professor</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- mentors section end -->
+
+<!-- pricing section start -->
+<section id="pricing-section">
+    <div class="container">
+        <div class="row text-center">
+            <h5 class="grow_title">Pricing</h5>
+            <h2 class="discover_title mb-4">Choose the Right <span>Plan</span> for you</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="pricing_card_wrapper">
+                    <div class="pricing_icon_wrapper">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="pricing_info">
+                        <h3><span>$20/</span>month</h3>
+                        <h4>Basic Pack</h4>
+                        <button class="pricing_btn">Try for Free</button>
+                    </div>
+                    <div class="pricing_list">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>3 Full Courses</li>
+                            <li><i class="fa-solid fa-check"></i>Lifetime free support</li>
+                            <li><i class="fa-solid fa-check"></i>Upgrade options</li>
+                            <li><i class="fa-solid fa-check"></i>9 Days Time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="pricing_card_wrapper midden_card">
+                    <div class="pricing_icon_wrapper">
+                        <i class="fa-brands fa-medium"></i>
+                    </div>
+                    <div class="pricing_info">
+                        <h3><span>$20/</span>month</h3>
+                        <h4>Medium pack</h4>
+                        <button class="pricing_btn">Try for Free</button>
+                    </div>
+                    <div class="pricing_list">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>3 Full Courses</li>
+                            <li><i class="fa-solid fa-check"></i>Lifetime free support</li>
+                            <li><i class="fa-solid fa-check"></i>Upgrade options</li>
+                            <li><i class="fa-solid fa-check"></i>9 Days Time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="pricing_card_wrapper">
+                    <div class="pricing_icon_wrapper">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div class="pricing_info">
+                        <h3><span>$20/</span>month</h3>
+                        <h4>Premium pack</h4>
+                        <button class="pricing_btn">Try for Free</button>
+                    </div>
+                    <div class="pricing_list">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>3 Full Courses</li>
+                            <li><i class="fa-solid fa-check"></i>Lifetime free support</li>
+                            <li><i class="fa-solid fa-check"></i>Upgrade options</li>
+                            <li><i class="fa-solid fa-check"></i>9 Days Time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- pricing section end -->
+
+<!-- testimonial section start -->
+<section id="testimonial-section" class="position-relative">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="testimonial_header">
+                    <h5 class="grow_title">Reviews</h5>
+                    <h2 class="light_title mb-4">What Our <br> <span>Students</span> Have <br> To Say</h2>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <!-- testimonial card -->
+                <div class="swiper testimonial_slider">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+
+                          <div class="card testimonial_card">
+                            
+                            <div class="testimonial_info d-flex align-items-center justify-content-between">
+                                <div class="testimonial_identity_wrapper d-flex align-items-center">
+                                    <img src="images/testimonial.png" alt="Testimonial Image" />
+                                    <div class="testimonial_identity">
+                                        <h5>Rovin Sans</h5>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                                <img src="images/backquet.png" alt="Testimonial Background Image" />
+                            </div>
+                            <div class="testimonial_reviews_wrapper">
+                                <div class="testimonial_star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </p>
+                            </div>
+
+                          </div>
+
+                      </div>
+
+                      <div class="swiper-slide">
+
+                        <div class="card testimonial_card">
+                          
+                          <div class="testimonial_info d-flex align-items-center justify-content-between">
+                              <div class="testimonial_identity_wrapper d-flex align-items-center">
+                                  <img src="images/testimonial2.png" alt="Testimonial Image" />
+                                  <div class="testimonial_identity">
+                                      <h5>Jenifer Dsouza</h5>
+                                      <p>Student</p>
+                                  </div>
+                              </div>
+                              <img src="images/backquet.png" alt="Testimonial Background Image" />
+                          </div>
+                          <div class="testimonial_reviews_wrapper">
+                              <div class="testimonial_star">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+
+                        <div class="card testimonial_card">
+                          
+                          <div class="testimonial_info d-flex align-items-center justify-content-between">
+                              <div class="testimonial_identity_wrapper d-flex align-items-center">
+                                  <img src="images/testimonial2.png" alt="Testimonial Image" />
+                                  <div class="testimonial_identity">
+                                      <h5>Jenifer Dsouza</h5>
+                                      <p>Student</p>
+                                  </div>
+                              </div>
+                              <img src="images/backquet.png" alt="Testimonial Background Image" />
+                          </div>
+                          <div class="testimonial_reviews_wrapper">
+                              <div class="testimonial_star">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+
+                        <div class="card testimonial_card">
+                          
+                          <div class="testimonial_info d-flex align-items-center justify-content-between">
+                              <div class="testimonial_identity_wrapper d-flex align-items-center">
+                                  <img src="images/testimonial2.png" alt="Testimonial Image" />
+                                  <div class="testimonial_identity">
+                                      <h5>Jenifer Dsouza</h5>
+                                      <p>Student</p>
+                                  </div>
+                              </div>
+                              <img src="images/backquet.png" alt="Testimonial Background Image" />
+                          </div>
+                          <div class="testimonial_reviews_wrapper">
+                              <div class="testimonial_star">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/background-shap.png" class="background-shap" alt="Background Sharp" />
+</section>
+<!-- testimonial section end -->
+
+<!-- blog section start -->
+<section id="blog-section">
+    
+    <div class="container">
+        <div class="row text-center">
+            <h5 class="grow_title">Blogs</h5>
+            <h2 class="discover_title mb-4">Choose Our Latest <span>Blog</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog_card_wrapper mt-5">
+                    <div class="card blog_card">
+                        <img src="images/blog.png" alt="Blog Image" />
+                        <div class="card-body">
+                            <div class="blog_publish_details d-flex align-items-center">
+                                <div class="person me-4">
+                                    <a href="#"><i class="fa-regular fa-user me-3"></i>Emily Parish</a>
+                                </div>
+                                <div class="date">
+                                    <a href="#"><i class="fa-regular fa-clock me-2"></i></i>June 2, 2023</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h4>Eco-Education in Our Lives We Can Change the Future</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.....</p>
+                                <a href="#" class="read_more_btn">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog_card_wrapper mt-5">
+                    <div class="card blog_card">
+                        <img src="images/blog2.png" alt="Blog Image" />
+                        <div class="card-body">
+                            <div class="blog_publish_details d-flex align-items-center">
+                                <div class="person me-4">
+                                    <a href="#"><i class="fa-regular fa-user me-3"></i>Emily Parish</a>
+                                </div>
+                                <div class="date">
+                                    <a href="#"><i class="fa-regular fa-clock me-2"></i></i>June 2, 2023</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h4>The Link Between Vendor Certification and Growth in IT</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.....</p>
+                                <a href="#" class="read_more_btn">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog_card_wrapper mt-5">
+                    <div class="card blog_card">
+                        <img src="images/blog3.png" alt="Blog Image" />
+                        <div class="card-body">
+                            <div class="blog_publish_details d-flex align-items-center">
+                                <div class="person me-4">
+                                    <a href="#"><i class="fa-regular fa-user me-3"></i>Emily Parish</a>
+                                </div>
+                                <div class="date">
+                                    <a href="#"><i class="fa-regular fa-clock me-2"></i></i>June 2, 2023</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h4>Corporate Online Learning Trends 2023 You Still Need</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.....</p>
+                                <a href="#" class="read_more_btn">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- blog section start -->
+
+<!-- footer start -->
+<footer class="position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer_details">
+                    <div class="footer_logo mb-4">
+                        <a href="index.html">EdClass.io</a>
+                    </div>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+                    <ul class="footer_social_links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer_details">
+                    <div class="footer_title text-light mb-4">
+                        <h4>Explore</h4>
+                    </div>
+                    <ul class="footer_menu_links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Course</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Plans</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer_details">
+                    <div class="footer_title text-light mb-4">
+                        <h4>Courses</h4>
+                    </div>
+                    <ul class="footer_menu_links">
+                        <li><a href="#">Business </a></li>
+                        <li><a href="#">Administration </a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Basic Start up</a></li>
+                        <li><a href="#">MBA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer_details">
+                    <div class="footer_title text-light mb-4">
+                        <h4>Contact Us</h4>
+                    </div>
+                    <ul class="footer_menu_links">
+                        <li><a href="#"><i class="fa-solid fa-envelope me-3"></i>info@eclassio.com </a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone me-3"></i>1-800-934-7336</a></li>
+                    </ul>
+                    <div class="newsletter_wrapper position-relative">
+                        <input type="search" id="news_letter" placeholder="Email Address" />
+                        <i class="fa-solid fa-envelope me-3"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright_wrapper">
+                <a href="#" class="text-light">© Ed class. io | All Rights Reserved | Design by NEWMEDIA</a>
+            </div>
+        
+        </div>
+    </div>
+    <img src="images/background-shap.png" class="background-shap" alt="Background Sharp" />
+</footer>
+<!-- footer end -->
+
+<!-- video pop -->
+<div id="light">
+    <a id="boxclose" onclick="lightbox_close();"><i class="fa-solid fa-x"></i></a>
+    <video id="VisaChipCardVideo" width="100%" controls>
+        <source src="images/mov_bbb.mp4" type="video/mp4">
+      </video>
+  </div>
+  
+<div id="fade" onClick="lightbox_close();"></div>
+  
+
+<script type="text/javascript">
+    window.document.onkeydown = function(e) {
+    if (!e) {
+        e = event;
+    }
+    if (e.keyCode == 27) {
+        lightbox_close();
+    }
+    }
+
+    function lightbox_open() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    window.scrollTo(0, 0);
+    document.getElementById('light').style.display = 'block';
+    document.getElementById('fade').style.display = 'block';
+    lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    document.getElementById('light').style.display = 'none';
+    document.getElementById('fade').style.display = 'none';
+    lightBoxVideo.pause();
+    }
+    $(document).ready(function() {
+
+    // toggle menu function
+        $(".navbar-toggler").click(function(){
+        
+        if ($(".mobile_menu_second").hasClass("active")) {
+
+            $(".mobile_menu_second").removeClass("active");
+        } else {
+            $(".mobile_menu_second").addClass("active");
+        }
+            
+        })
+
+        $(".close_btn_menu").click(function(){
+
+            if ($(".mobile_menu_second").hasClass("active")) {
+
+                $(".mobile_menu_second").removeClass("active");
+            } else {
+                $(".mobile_menu_second").addClass("active");
+            }
+            
+        })
+
+
+    // Initialize Swiper
+    var swiper = new Swiper(".course_slider", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0:{
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    // swiper init for testimonial
+    var swiper_testimonial = new Swiper(".testimonial_slider", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0:{
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+      })
+
+    
+
+</script>
+
+</body>
+</html>

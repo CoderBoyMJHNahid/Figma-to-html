@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdClass</title>
+
+    <!-- css links -->
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <!-- Swiper's CSS link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- scripts cdn -->
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- full calender cdn -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.js'></script>
+
+
+</head>
+<body>
+
+    <!-- second header start -->
+    <header id="second_header">
+        <div class="top-nav--bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="logo_wrapper">
+                            <a href="index.html" class="navbar-brand">EdClass.io</a>
+                        </div>
+                    </div>
+                    <div class="col-8 d-flex align-items-center justify-content-end">
+                        <!-- here the search bar -->
+                        <!-- <div class="search_wrapper position-relative me-4">
+                            <input type="search" placeholder="Search the Course...." id="header_search"/>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div> -->
+                        <div class="header_btn_wrapper me-4">
+                            <a href="#" class="btn sign_up_btn log_in_btn">Log In</a>
+                        </div>
+                        <div class="header_btn_wrapper">
+                            <a href="#" class="btn sign_up_btn">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <nav>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <ul id="second-menu_items">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="classroom.html">Classroom</a></li>
+                            <li><a href="calender.html">Calender</a></li>
+                            <li class="active"><a href="chat.html">Chat</a></li>
+                        </ul>
+                        <div id="menu_icon" class="d-lg-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <ul id="header_notification_icon" class="justify-content-end">
+                            <li><a href="#"><img src="images/search-icon.png" alt="Search Icon"></a></li>
+                            <li><a href="#"><img src="images/ball.png" alt="Ball Icon"></a></li>
+                            <li><a href="#"><img src="images/chart.png" alt="Chart Icon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile_menu_second">
+        <ul id="second-mobile_menu_items">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="community.html">Community</a></li>
+            <li><a href="classroom.html">Classroom</a></li>
+            <li><a href="calender.html">Calender</a></li>
+            <li><a href="chat.html">Chat</a></li>
+        </ul>
+        <div class="close_btn_menu">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div> 
+    <!-- second header end -->
+
+    <section id="chat_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="search_wrapper position-relative me-4 mb-4">
+                        <input style="width: 100%;" type="search" placeholder="Search" id="header_search"/>
+                    </div>
+
+                    <div class="active_person_wrapper pb-4 d-flex align-items-end justify-content-between">
+                        <div class="top_cover_active_person">
+                            <h6>Active</h6>
+                            <div class="members_photo_wrapper chat_person_wrapper d-grid gap-2">
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/author.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/author.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/author.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="img_wrapper_dot position-relative">
+                                    <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="show_massage_icon_wrapper">
+                            <i class="fa-brands fa-rocketchat" ></i>
+                        </div>
+                    </div>
+
+                    <div class="massage_notification_Wrapper d-flex align-items-center justify-content-between py-4">
+                        <div class="massage_title">
+                            <h5>Massage <span>40</span></h5>
+                        </div>
+                        <div class="icon_massage_wrapper">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <div class="all_notification_massage">
+                        <div class="close_btn_massage_slide">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <div class="small_massage_wrapper pb-4 mb-4">
+                            <div class="massager_intro_part mb-4 d-flex align-items-center justify-content-between">
+                                <div class="massage_send_person d-flex align-items-center">
+                                    <div class="img_wrapper_dot position-relative me-3" style="width: 40px;">
+                                        <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="name_username_wrapper">
+                                        <h5>Kristen Stewart</h5>
+                                        <p>Kristen</p>
+                                    </div>
+                                </div>
+                                <p>5 mins ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod......</p>
+                        </div>
+                        <div class="small_massage_wrapper pb-4 mb-4">
+                            <div class="massager_intro_part mb-4 d-flex align-items-center justify-content-between">
+                                <div class="massage_send_person d-flex align-items-center">
+                                    <div class="img_wrapper_dot position-relative me-3" style="width: 40px;">
+                                        <img src="images/author.png" alt="Members Photo" width="40px" />
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="name_username_wrapper">
+                                        <h5>John Doe</h5>
+                                        <p>Kristen</p>
+                                    </div>
+                                </div>
+                                <p>5 mins ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod......</p>
+                        </div>
+                        <div class="small_massage_wrapper pb-4 mb-4">
+                            <div class="massager_intro_part mb-4 d-flex align-items-center justify-content-between">
+                                <div class="massage_send_person d-flex align-items-center">
+                                    <div class="img_wrapper_dot position-relative me-3" style="width: 40px;">
+                                        <img src="images/admin.png" alt="Members Photo" width="40px" />
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="name_username_wrapper">
+                                        <h5>Kristen Stewart</h5>
+                                        <p>Kristen</p>
+                                    </div>
+                                </div>
+                                <p>5 mins ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod......</p>
+                        </div>
+                        <div class="small_massage_wrapper pb-4 mb-4">
+                            <div class="massager_intro_part mb-4 d-flex align-items-center justify-content-between">
+                                <div class="massage_send_person d-flex align-items-center">
+                                    <div class="img_wrapper_dot position-relative me-3" style="width: 40px;">
+                                        <img src="images/author.png" alt="Members Photo" width="40px" />
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="name_username_wrapper">
+                                        <h5>John Doe</h5>
+                                        <p>Kristen</p>
+                                    </div>
+                                </div>
+                                <p>5 mins ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod......</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="chat_wrapper position-relative">
+                        
+                        <div class="chat_header d-flex align-items-center justify-content-between">
+                            
+                            <div class="chat_person_wrapper d-flex gap-3 align-items-center">
+                                <div class="photo_wrapper position-relative">
+                                    <img src="images/author.png" alt="Chatted Person Image" />
+                                    <img src="images/blue_trick.png" alt="Blue Trick" id="blue_trick" />
+                                </div>
+                                <div class="person_name_wrapper d-flex align-items-center gap-3">
+                                    <div class="name_wrapper">
+                                        <h5 class="m-0">Mia Johnson</h5>
+                                        <p>@miajohnson</p>
+                                    </div>
+                                    <div class="status_wrapper">
+                                        <i class="fa-solid fa-circle-dot"></i> online
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="chat_header_btn_wrapper">
+                                <button id="archive_btn" class="me-md-3">Archive</button>
+                                <button id="profile_btn">Profile</button>
+                            </div>
+                        </div>
+
+                        <div class="chat_massage_wrapper">
+
+                            <div class="other_massager mt-3 d-flex gap-3">
+                                <div class="img_wrapper_dot position-relative" style="width:40px;height: 40px;">
+                                    <img src="images/author.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod......</p>
+                            </div>
+                            <div class="your_massager mt-3 me-3">
+                                <div class="date_info d-flex align-items-center justify-content-between">
+                                    <p></p>
+                                    <p><span>Thursday 11:33 pm </span></p>
+                                </div>
+                                <div class="massager_wrapper_you">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                                </div>
+                            </div>
+                            <div class="other_massager mt-3 d-flex gap-3">
+                                <div class="img_wrapper_dot position-relative" style="width:40px;height: 40px;">
+                                    <img src="images/author.png" alt="Members Photo" width="40px" />
+                                    <span class="dot"></span>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam porro incidunt iure ut iusto facilis rerum aperiam unde, commodi sit doloremque ea consequatur tempore velit ullam sequi voluptas perferendis....</p>
+                            </div>
+                            <div class="your_massager mt-3 me-3">
+                                <div class="date_info d-flex align-items-center justify-content-between">
+                                    <p></p>
+                                    <p><span>Today</span></p>
+                                </div>
+                                <div class="massager_wrapper_you">
+                                    <p>hi</p>
+                                </div>
+                            </div>
+                            <div class="your_massager mt-3 me-3">
+                                <div class="date_info d-flex align-items-center justify-content-between">
+                                    <p></p>
+                                    <p><span></span></p>
+                                </div>
+                                <div class="massager_wrapper_you">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                                </div>
+                            </div>
+                            <div class="your_massager mt-3 me-3">
+                                <div class="date_info d-flex align-items-center justify-content-between">
+                                    <p></p>
+                                    <p><span></span></p>
+                                </div>
+                                <div class="massager_wrapper_you">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="chat_input_wrapper">
+                            <div class="position-relative">
+                            <textarea name="" id="send_massage" rows="4" placeholder="Send a massage"></textarea>
+                            <div class="setting_text_wrapper">
+                                <i class="fa-solid fa-face-smile"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <button id="massage_send">Send</button>
+                            </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_details">
+                        <div class="footer_logo mb-4">
+                            <a href="index.html">EdClass.io</a>
+                        </div>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+                        <ul class="footer_social_links">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_details">
+                        <div class="footer_title text-light mb-4">
+                            <h4>Explore</h4>
+                        </div>
+                        <ul class="footer_menu_links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_details">
+                        <div class="footer_title text-light mb-4">
+                            <h4>Courses</h4>
+                        </div>
+                        <ul class="footer_menu_links">
+                            <li><a href="#">Business </a></li>
+                            <li><a href="#">Administration </a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Basic Start up</a></li>
+                            <li><a href="#">MBA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_details">
+                        <div class="footer_title text-light mb-4">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <ul class="footer_menu_links">
+                            <li><a href="#"><i class="fa-solid fa-envelope me-3"></i>info@eclassio.com </a></li>
+                            <li><a href="#"><i class="fa-solid fa-phone me-3"></i>1-800-934-7336</a></li>
+                        </ul>
+                        <div class="newsletter_wrapper position-relative">
+                            <input type="search" id="news_letter" placeholder="Email Address" />
+                            <i class="fa-solid fa-envelope me-3"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copyright_wrapper">
+                    <a href="#" class="text-light">© Ed class. io | All Rights Reserved | Design by NEWMEDIA</a>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+            
+
+        // toggle menu function
+            $("#menu_icon").click(function(){
+    
+                if ($(".mobile_menu_second").hasClass("active")) {
+    
+                    $(".mobile_menu_second").removeClass("active");
+                } else {
+                    $(".mobile_menu_second").addClass("active");
+                }
+                
+            })
+    
+            $(".close_btn_menu").click(function(){
+    
+                if ($(".mobile_menu_second").hasClass("active")) {
+    
+                    $(".mobile_menu_second").removeClass("active");
+                } else {
+                    $(".mobile_menu_second").addClass("active");
+                }
+                
+            })
+    
+            // toggle massage side menu
+            $(".show_massage_icon_wrapper").click(function(){
+                $(".all_notification_massage").addClass("active");
+            })
+            $(".close_btn_massage_slide").click(function(){
+                $(".all_notification_massage").removeClass("active");
+            })
+        });
+    </script>
+</body>
+</html>
+    
